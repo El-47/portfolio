@@ -21,8 +21,8 @@ const About = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }} 
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-center"
           ></motion.div>
           {/* text */}
           <motion.div
@@ -33,52 +33,17 @@ const About = () => {
             className="flex-1"
           >
             <h2 className="h2 text-accent">About me.</h2>
-            <h3 className="h3 mb-4">I'm a Freelance Front-end Developer.</h3>
+            <h3 className="h3 mb-4">"Constantly Learning, Forever Coding."</h3>
             <p className="mb-6">
-              Nulla amet ut et cillum voluptate anim mollit tempor consectetur
-              sint id non est. Adipisicing amet voluptate anim labore. Ad in
-              exercitation culpa ex proident tempor nulla sit nostrud. Qui enim
-              cillum irure non eu eu velit pariatur voluptate esse commodo
-              cupidatat. Qui dolore officia reprehenderit laboris ullamco
-              consectetur enim ipsum aute minim tempor reprehenderit consequat.
+              Greetings! I am a passionate computer science student with an
+              insatiable curiosity for all things related to technology. My
+              journey in the world of coding has been nothing short of
+              thrilling, and I am committed to honing my skills and becoming a
+              proficient software engineer.
+              But my interests don't stop there. I am an avid reader, and books are my constant companions. From classic literature to the latest in tech literature, I am always eager to explore new worlds and ideas through the pages of a book.
             </p>
             {/* stats */}
-            <div className="flex gap-x-6 lg:gap-x-10 mb-12">
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
-                  k+
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Projects <br />
-                  Completed
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                  k+
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Satisfied <br />
-                  Clients
-                </div>
-              </div>
-            </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
             </div>
           </motion.div>
         </div>

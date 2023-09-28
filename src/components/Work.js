@@ -4,9 +4,13 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 // img
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img1 from "../assets/Picture1.png";
+import Img2 from "../assets/Picture2.png";
+import Img3 from "../assets/Picture3.png";
+
+const viewallprojects = () => {
+  window.open("https://github.com/El-47?tab=repositories", "_blank");
+};
 
 const Work = () => {
   return (
@@ -24,14 +28,19 @@ const Work = () => {
             <div>
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br />
-                Work.
+                Projects.
               </h2>
               <p className="max-w-sm mb-16">
-                Irure nulla do dolor pariatur est velit ad consequat ea. Laboris
-                fugiat tempor ullamco qui commodo cillum eu. Aliquip laboris
-                proident officia laboris ullamco eiusmod ullamco nisi.
+                I've had the privilege of working on a diverse range of projects
+                that have enriched my skills and knowledge. From crafting
+                interactive web applications that blend form and functionality
+                seamlessly to diving into data analysis and machine learning
+                experiments, my projects reflect my passion for technology and
+                coding.
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm" onClick={viewallprojects}>
+                View all projects
+              </button>
             </div>
             {/* image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
@@ -45,11 +54,19 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Web Dev</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <a
+                  href="https://meetup-website-three.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-3xl text-white">
+                    Events and Meetups
+                  </span>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -72,11 +89,17 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Blockchain</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <a
+                  href="https://github.com/El-47/decentral_ticket"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <span className="text-3xl text-white">Decentral Ticket</span>
+                </a>
               </div>
             </div>
             {/* image */}
@@ -91,11 +114,17 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Reinforcement Learning</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <a
+                  href="https://github.com/El-47/RL_snakegame"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <span className="text-3xl text-white">Snake game</span>
+                </a>
               </div>
             </div>
           </motion.div>

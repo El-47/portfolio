@@ -1,8 +1,8 @@
 import React from "react";
 
-import Image from "../assets/avatar.svg";
+import img from "../assets/6876191.jpg"
 
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -39,11 +39,11 @@ const Banner = () => {
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
                 sequence={[
-                  "Developer",
+                  "Student",
                   2000,
-                  "Designer",
+                  "Coder",
                   2000,
-                  "Youtuber",
+                  "Learner",
                   2000,
                 ]}
                 speed={50}
@@ -59,8 +59,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Veniam irure elit esse officia ea sunt dolor pariatur sunt
-              reprehenderit aute veniam nostrud esse.
+              Hey there, I'm a chess-playing, code-crunching computer science enthusiast with a book in one hand and a keyboard in the other.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -69,10 +68,6 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
             </motion.div>
             {/* socials */}
             <motion.div
@@ -82,14 +77,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube />
+              <a href="https://www.linkedin.com/in/shakti-pratap-singh-576543246/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn />
               </a>
-              <a href="#">
+              <a href="https://github.com/El-47" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="#">
-                <FaDribbble />
+              <a href="https://twitter.com/Shakti71512818" target="_blank" rel="noopener noreferrer">
+                <FaTwitter />
               </a>
             </motion.div>
           </div>
@@ -100,7 +95,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-            <img src={Image} alt="" />
+            <img src={img} alt="" class="rounded-lg shadow-lg opacity-60 transform hover:scale-105 hover:hue-rotate-30 transition-transform duration-300"/>
           </motion.div>
         </div>
       </div>
